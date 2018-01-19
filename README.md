@@ -78,13 +78,13 @@ las coincidencias de películas posibles a ver , resultando un match! que les ev
 
 #### PROFUNDIZANDO - CONOCIENDO MÁS
 ##### Historias:
-#### ¿Quieres ver una película con tu pareja, y no saben cual elegir?
+### ¿Quieres ver una película con tu pareja, y no saben cual elegir?
   ![Con la Pareja](assets/images/readme/historia1.png)
-#### ¿Estás con tus amigos, quieren ver una película y no se ponen de acuerdo?
+### ¿Estás con tus amigos, quieren ver una película y no se ponen de acuerdo?
   ![Con los Amigos](assets/images/readme/historia2.png)
-#### ¿Estás solito? y quieres relajarte y no perder mucho tiempo en elegir una pelicula.
+### ¿Estás solito? y quieres relajarte y no perder mucho tiempo en elegir una pelicula.
   ![Solito](assets/images/readme/historia3.png)
-#### Quieres ver una película con tu pareja, y no saben cual elegir?
+### ¿Estas en familia ?
   ![Con la Familia](assets/images/readme/historia4.png)
 
 ### SKETCH

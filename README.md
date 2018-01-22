@@ -61,7 +61,11 @@ facilitar la elección de películas ya sea para ver sóla(o) o en grupo.
 
 ### ETAPA USER EXPERIENCIE - UX
 #### EMPATIZANDO - IDENTIFICANDO LA NECESIDAD
-Se han identificado la historia real de un electricita, y a través de entrevistas se han identificado sus necesidades.
+Se ha realizado un conversartorio entre las integrantes del grupo , utilizando la lluvia de ideas para identificar
+las experiencias personales de ver una película solas o acompañadas. Logrando identificar que existe una necesidad
+de una guía para elegir una película y de como evitar que esto nos resulte un conflicto ( de tiempo y búsquedas
+independientes) y que a su vez nos genere coincidencias entre preferencias diferentes, de lo contrario que nos envíe
+la lista de películas posibles).
 
 ##### Entrevista:
 * Encuesta Online a Posibles Visitantes: Se encuestó a 26 personas.

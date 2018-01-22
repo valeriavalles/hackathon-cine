@@ -80,98 +80,144 @@ $(document).ready(function() {
   /* eventos para cada tipo de genero de la pelicula*/
   /* array segun los generos de peliculas*/
   var total = [];
-  /* var flag = 0;*/
-  /* evento para los datos del genero  musical*/
+  var newTotal = []; // variable que temporal tiene el resultado.
+  var flag = [] ;
+  var flagSelect = [] ;
+  /* Eventos para capturar en que div se está eligiendo */
+
+ 
+  /* eventos para cada tipo de preferencia de la pelicula*/
   $('.musical').click(function() {
-    /* flag = 1;*/
+    flag[1] = 1;
     /* incorpora los elementos de la data musical*/
     total = $.merge(total, musical);
     console.log(total);
   });
   /* evento para los datos del género fantasia*/
   $('.fantasy').click(function() {
-    /* flag = 2;*/
+    flag[2] = 1;
     /* incorpora los elementos de la data fantasy*/
     total = $.merge(total, fantasy);
     console.log(total);
   });
   /* evento para los datos del género ciencia ficción */
   $('.ficcion').click(function() {
-    /* flag = 3 ;*/
+    flag[3] = 1;
     /* incorpora los elementos de la data ciencia ficcion*/
     total = $.merge(total, cienciaficcion);
     console.log(total);
   });
   /* evento para los datos del género acción */
   $('.accion').click(function() {
-    /* flag = 4 ;*/
+    flag[4] = 1;
     /* incorpora los elementos de la data accion*/
     total = $.merge(total, accion);
     console.log(total);
   });
   /* evento para los datos del género animados*/
   $('.animada').click(function() {
-  /*  flag = 5 ;*/
+    flag[5] = 1;
     /* incorpora los elementos de la data accion*/
     total = $.merge(total, animada);
     console.log(total);
   });
   /* evento para los datos del género aventura*/
   $('.aventura').click(function() {
-  /*  flag = 6 ;*/
+    flag[6] = 1;
     total = $.merge(total, aventura);
     console.log(total);
   });
 
   $('.cienciaficcion').click(function() {
-    flag = 7 ;
+    flag[7] = 1;
     total = $.merge(total, cienciaficcion);
     console.log(total);
   });
 
   $('.comedia').click(function() {
-    flag = 8 ;
+    flag[8] = 1;
     total = $.merge(total, comedia);
     console.log(total);
   });
 
   $('.drama').click(function() {
-    flag = 9 ;
+    flag[9] = 1;
     total = $.merge(total, drama);
     console.log(total);
   });
 
   $('.erotico').click(function() {
-    flag = 10 ;
+    flag[10] = 1;
     total = $.merge(total, erotico);
     console.log(total);
   });
 
   $('.romantica').click(function() {
-    flag = 11 ;
+    flag[11] = 1;
     total = $.merge(total, romantica);
     console.log(total);
   });
 
   $('.suspenso').click(function() {
-    flag = 12 ;
+    flag[12] = 1;
     total = $.merge(total, suspenso);
     console.log(total);
   });
 
   $('.terror').click(function() {
-    flag = 14 ;
+    flag[13] = 1;
     total = $.merge(total, aventura);
     console.log(total);
   });
 
+ /*
+  $('#select-1').click(function() {
+    var flagSelect[1] = 1 ;
+  });
+
+  $('#select-2').click(function() {
+    var flagSelect[2] = 1 ;
+  });
+
+  $('#select-3').click(function() {
+    var flagSelect[3] = 1 ;
+  });
+
+  $('#select-4').click(function() {
+    var flagSelect[4] = 1 ;
+ 
+  });
+
+  $('#select-5').click(function() {
+    var flagSelect[5] = 1 ;
+  });
+  
+  */
+
+
   var temp = [];
   var coincidencia = [];
   var poscoincencia = [];
-	 var pos = 0;
+	var pos = 0;
   var myArrClean = [];
+
+  var acumFlagSelect =0;
+
   /* evento para el btn quiero ver mis pelis*/
   $('#match').click(function() {
+    
+    /*
+    for ( var a = 1 ; a<=5 ; a++) {
+      acumFlagSelect += flagSelect[a];
+    }
+
+    if ( acumFlagSelect === 2 ) {
+      alert ( ' hola hay 2 select');
+    } else {
+      alert ( ' menos de 2 select');
+    }
+    */
+
     console.log(total);
 	  flag = 15;
     /* recorrido en el array de los géneros de peliculas seleccionados,suma */
@@ -191,7 +237,12 @@ $(document).ready(function() {
     myArrClean = coincidencia.filter(Boolean);
     console.log(coincidencia);
   });
-
+  /* botón reset se activa al iniciar la 1era selección de preferencia*/ 
+  $('#reset').click(function() {
+    total = [] ;
+    coincidencia = [] ;
+    temp = [] ;
+  }); 
 
   /* funcion para llamar el api*/
   function apiCall() {

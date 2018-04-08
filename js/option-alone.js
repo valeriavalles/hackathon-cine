@@ -85,7 +85,7 @@ $(document).ready(function() {
     var randomMovie = array1[movie];
     console.log(randomMovie);
     /* obteniendo los datos con el api*/
-    $.getJSON('http://www.omdbapi.com/?apikey=3a181f1c&t=' + randomMovie).then(function(response) {
+    $.getJSON('http://www.omdbapi.com/?apikey=852159f0&t=' + randomMovie).then(function(response) {
       /* obteniendo el objeto*/
       console.log(response);
       /* var typeMovie = response.Genre;

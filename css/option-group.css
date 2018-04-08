@@ -24,3 +24,9 @@
   line-height: 2;
   font-size: 16px;
 }
+.genders:hover {
+  background: rgba(134, 160, 231, 0.815) ;
+  color: #000;
+  border-radius: 5px;
+}
+
